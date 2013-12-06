@@ -6,16 +6,16 @@ package com.ltree.workshop3_1;
  */
 public class UnitConverter {
 
-    public static double  milesToKilometers() {
+    public static double  milesToKilometers(double miles) {
         return 0;
     }
-    public static double  poundsToKilograms() {
+    public static double  poundsToKilograms(double pounds) {
         return 0;
     }   
-    public static double  kilometersToMiles() {
+    public static double  kilometersToMiles(double kilometers) {
         return 0;
     }   
-    public static double  kilogramsToPounds() {
+    public static double  kilogramsToPounds(double kilograms) {
         return 0;
     }      
 }
