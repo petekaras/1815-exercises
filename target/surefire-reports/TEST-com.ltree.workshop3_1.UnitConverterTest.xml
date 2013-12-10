@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.08" errors="0" skipped="0" tests="6" name="com.ltree.workshop3_1.UnitConverterTest">
+<testsuite failures="0" time="0.04" errors="0" skipped="0" tests="6" name="com.ltree.workshop3_1.UnitConverterTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.7.0_01\jre\bin"/>
@@ -21,7 +21,7 @@
     <property name="basedir" value="C:\pete-work-local\ltree-solutions\1815-solutions"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.7.0_01\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefirebooter1365572607877765970.jar"/>
+    <property name="surefire.real.class.path" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefirebooter482115027027226237.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\peter\"/>
     <property name="line.separator" value="
 "/>
@@ -30,7 +30,7 @@
     <property name="os.name" value="Windows 7"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.7.0_01\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\cygwin\usr\local\bin;C:\cygwin\bin;C:\cygwin\bin;C:\program files (x86)\common files\microsoft shared\windows live;C:\windows\system32;C:\windows;C:\windows\system32\wbem;C:\windows\system32\windowspowershell\v1.0\;C:\program files (x86)\egistec\mywinlocker 3\x86;C:\program files (x86)\egistec\mywinlocker 3\x64;C:\program files\tortoisesvn\bin;C:\program files (x86)\microsoft sql server\90\tools\binn\;C:\program files (x86)\microsoft sql server\100\tools\binn\;C:\program files\microsoft sql server\100\tools\binn\;C:\program files\microsoft sql server\100\dts\binn\;C:\program files (x86)\microsoft sql server\100\tools\binn\vsshell\common7\ide\;C:\program files (x86)\microsoft visual studio 9.0\common7\ide\privateassemblies\;C:\program files (x86)\microsoft sql server\100\dts\binn\;C:\program files (x86)\microsoft asp.net\asp.net web pages\v1.0\;C:\program files (x86)\git\cmd;C:\program files (x86)\apache-maven-3.0.3\bin;C:\program files (x86)\git\cmd;C:\program files (x86)\git\cmd;C:\program files (x86)\git\cmd;C:\program files\sliksvn\bin\;C:\users\peter\.m2\repository;C:\program files (x86)\quicktime\qtsystem\;C:\program files (x86)\java\jdk1.7.0_01;C:\ant;C:\program files (x86)\microsoft sql server\110\tools\binn\;C:\program files\microsoft sql server\110\tools\binn\;C:\program files\microsoft sql server\110\dts\binn\;C:\wamp\bin\php\php5.3.13;C:\users\peter\appdata\local\smartbar\application\;C:\users\peter\appdata\local\smartbar\application\;C:\program files (x86)\ibm\gsk8\lib;C:\PROGRA~2\IBM\SQLLIB\BIN;C:\PROGRA~2\IBM\SQLLIB\FUNCTION;C:\PROGRA~2\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\GNU\GnuPG\pub;C:\Program Files\Common Files\Microsoft Shared\Windows Live;.;&quot;C;C:\cygwin\Program Files (x86)\apache-maven-3.0.3\bin&quot;;&quot;C;C:\cygwin\Program Files (x86)\apache-ant-1.8.2\bin&quot;;&quot;C;C:\cygwin\Program Files (x86)\Java\jdk1.6.0_24\bin&quot;;."/>
-    <property name="surefire.test.class.path" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\test-classes;C:\pete-work-local\ltree-solutions\1815-solutions\target\classes;C:\Users\peter\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\peter\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\test-classes;C:\pete-work-local\ltree-solutions\1815-solutions\target\classes;C:\Users\peter\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\peter\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\peter\.m2\repository\org\easymock\easymock\3.2\easymock-3.2.jar;C:\Users\peter\.m2\repository\cglib\cglib-nodep\2.2.2\cglib-nodep-2.2.2.jar;C:\Users\peter\.m2\repository\org\objenesis\objenesis\1.3\objenesis-1.3.jar;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -41,11 +41,11 @@
     <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="peter"/>
-    <property name="java.class.path" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\test-classes;C:\pete-work-local\ltree-solutions\1815-solutions\target\classes;C:\Users\peter\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\peter\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\test-classes;C:\pete-work-local\ltree-solutions\1815-solutions\target\classes;C:\Users\peter\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\peter\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\peter\.m2\repository\org\easymock\easymock\3.2\easymock-3.2.jar;C:\Users\peter\.m2\repository\cglib\cglib-nodep\2.2.2\cglib-nodep-2.2.2.jar;C:\Users\peter\.m2\repository\org\objenesis\objenesis\1.3\objenesis-1.3.jar;"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.7.0_01\jre"/>
-    <property name="sun.java.command" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefirebooter1365572607877765970.jar C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefire7917114604598948044tmp C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefire5770154101336687613tmp"/>
+    <property name="sun.java.command" value="C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefirebooter482115027027226237.jar C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefire6326421914438782439tmp C:\pete-work-local\ltree-solutions\1815-solutions\target\surefire\surefire37083461458572275tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="0" classname="com.ltree.workshop3_1.UnitConverterTest" name="shouldConvertPoundsToKilograms"/>
+  <testcase time="0.01" classname="com.ltree.workshop3_1.UnitConverterTest" name="shouldConvertPoundsToKilograms"/>
   <testcase time="0" classname="com.ltree.workshop3_1.UnitConverterTest" name="shouldConvertBasicMileUnit"/>
   <testcase time="0" classname="com.ltree.workshop3_1.UnitConverterTest" name="shouldConvertMilesToKilometers"/>
   <testcase time="0" classname="com.ltree.workshop3_1.UnitConverterTest" name="shouldConvertKilogramsToPounds"/>
