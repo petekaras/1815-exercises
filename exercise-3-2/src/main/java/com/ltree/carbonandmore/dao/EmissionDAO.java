@@ -1,8 +1,10 @@
-package com.ltree.workshop3_2.dao;
+package com.ltree.carbonandmore.dao;
 
 public interface EmissionDAO {
 	/**
-	 * Enumeration of supported transport types held in the database.
+	 * Enumeration of supported transport types held in the database. This class
+	 * helps us limit what can be passed to our classes and so controls the
+	 * behaviour of the system.
 	 * 
 	 * @author peter
 	 * 
@@ -12,7 +14,7 @@ public interface EmissionDAO {
 	}
 
 	/**
-	 * Gte the emission type
+	 * Get the emission for a specific transport type.
 	 * 
 	 * @param transportType
 	 *            - the transport type

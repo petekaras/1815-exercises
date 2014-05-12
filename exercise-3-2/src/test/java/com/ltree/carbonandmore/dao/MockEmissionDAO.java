@@ -1,6 +1,6 @@
-package com.ltree.workshops.dao;
+package com.ltree.carbonandmore.dao;
 
-import com.ltree.workshops.dao.EmissionDAO;
+import com.ltree.carbonandmore.dao.EmissionDAO;
 
 public class MockEmissionDAO implements EmissionDAO{
 
@@ -9,10 +9,9 @@ public class MockEmissionDAO implements EmissionDAO{
 		switch (transportType) {
 		case CAR_FORD_MONDEO_HATCHBACK:
 			return 109;	
-		case CAR_FORD_GALAXY:
-			return 120;				
+		//TODO: add some more fake data			
 		default:
-			throw new IllegalArgumentException();
+			return 0;
 		}
 	}
 
