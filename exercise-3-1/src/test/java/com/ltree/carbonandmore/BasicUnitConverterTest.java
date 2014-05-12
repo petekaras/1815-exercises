@@ -86,7 +86,7 @@ public class BasicUnitConverterTest {
 //	@Test 
 //	public void shouldConvertBasicKilogramUnit() {
 //		double result = carbonAndMoreUnitConverter.kilogramsToPounds(1);
-//		Assert.assertEquals(CarbonAndMoreUnitConverter.ONE_KILOGRAM_AS_POUNDS,
+//		Assert.assertEquals(BasicUnitConverter.ONE_KILOGRAM_AS_POUNDS,
 //				result, EPSILON_POUNDS);
 //	}
 
