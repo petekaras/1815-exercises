@@ -6,7 +6,7 @@ package com.ltree.carbonandmore;
  * @author peter
  *  
  */
-public class BasicUnitConverter {
+public class BasicUnitConverter implements UnitConverter{
 	
 	
 	/**
@@ -16,18 +16,21 @@ public class BasicUnitConverter {
 	public static final double ONE_KILOGRAM_AS_POUNDS = 2.20462;
 
 	public double milesToKilometers(double miles) {
-		//return miles * ONE_MILE_AS_KILOMETER;
-		return 0;
+		return miles * ONE_MILE_AS_KILOMETER;
 	}
 
 	public double poundsToKilograms(double pounds) {
-		//return (1 / ONE_KILOGRAM_AS_POUNDS) * pounds;
-		return 0;
+		return (1 / ONE_KILOGRAM_AS_POUNDS) * pounds;
+
 	}
 
 	public double kilometersToMiles(double kilometers) {
-		//return (1 / ONE_MILE_AS_KILOMETER) * kilometers;
-		return 0;
+		return (1 / ONE_MILE_AS_KILOMETER) * kilometers;
+	}
+
+	@Override
+	public double kilogramsToPounds(double kilograms) {
+		return kilograms * ONE_KILOGRAM_AS_POUNDS;
 	}
 
 
