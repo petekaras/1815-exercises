@@ -16,7 +16,8 @@ public class CarbonDioxideCalculatorTest {
 	CarbonDioxideCalculator carbonDioxideCalculator = null;
 	
     private static final double EPSILON = 0.01;
-	
+    private static final double CAR_FORD_MONDEO_HATCHBACK_EMISSION = 109;
+    
     @Before
 	public void setUp(){		
     	EmissionDAO mockEmissionDAO = new MockEmissionDAO();
@@ -32,7 +33,7 @@ public class CarbonDioxideCalculatorTest {
 	@Test
 	public void shouldCalculateSimpleNumber() {
 		double result = carbonDioxideCalculator.calculate(TransportType.CAR_FORD_MONDEO_HATCHBACK, 1);
-		Assert.assertEquals(109, result, EPSILON);
+		Assert.assertEquals(CAR_FORD_MONDEO_HATCHBACK_EMISSION, result, EPSILON);
 	}
 	
 

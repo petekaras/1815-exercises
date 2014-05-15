@@ -35,7 +35,7 @@ public class CarbonDioxideCalculator {
 	 */
 	public double calculate(final TransportType transportType,
 			final double distance) {
-		double emission = 0;//TODO: get the emission from the DAO 
+		double emission = 0.0;//emissionDAO.getEmission(transportType);//TODO: get the emission from the DAO 
 		return (emission * distance);
 	}
 }
