@@ -47,8 +47,6 @@ public class EmissionDAOTest {
 				result);
 	}
 		
-
-
 	public void shouldNotFindEmission() {
 		BigDecimal result = emissionDAO.getEmission(TRANSPORT_TYPE_NOT_ON_SYSTEM);
 		Assert.assertEquals(null, result);
