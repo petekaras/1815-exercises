@@ -20,7 +20,7 @@ public class EmissionDAOTest {
 
 	/* Test User */
 	private static final TransportType TRANSPORT_TYPE_ON_SYSTEM = TransportType.CAR_FORD_GALAXY;
-	private static final BigDecimal EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM = new BigDecimal("12.61");
+	private static final double EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM = 12.61;
 
 	/* Test User not on system */
 	private static final TransportType TRANSPORT_TYPE_NOT_ON_SYSTEM = TRANSPORT_TYPE_ON_SYSTEM.CAR_NISSAN_MICRA;
@@ -42,13 +42,13 @@ public class EmissionDAOTest {
 
 	@Test
 	public void shouldFindEmission() {
-		BigDecimal result = emissionDAO.getEmission(TRANSPORT_TYPE_ON_SYSTEM);
+		double result = emissionDAO.getEmission(TRANSPORT_TYPE_ON_SYSTEM);
 		Assert.assertEquals(EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM,
-				result);
+				result,0.01);
 	}
 		
 	public void shouldNotFindEmission() {
-		BigDecimal result = emissionDAO.getEmission(TRANSPORT_TYPE_NOT_ON_SYSTEM);
+		double result = emissionDAO.getEmission(TRANSPORT_TYPE_NOT_ON_SYSTEM);
 		Assert.assertEquals(null, result);
 	}
 

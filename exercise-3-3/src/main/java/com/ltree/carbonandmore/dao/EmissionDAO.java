@@ -22,7 +22,7 @@ public interface EmissionDAO {
 	 *            - the transport type
 	 * @return - the emission in grams per kilometer (g/km)
 	 */
-	public BigDecimal getEmission(final TransportType transportType);
+	public double getEmission(final TransportType transportType); 
 	
 	/**
 	 * Sets the data source for this DAO
