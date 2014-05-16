@@ -1,8 +1,5 @@
 package com.ltree.carbonandmore.dao;
 
-import java.io.File;
-import java.net.URL;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,7 +8,11 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import com.ltree.carbonandmore.dao.EmissionDAO.TransportType;
-
+/**
+ * Functional Tests that ensure our DAO is working as expected.
+ * @author peter
+ *
+ */
 public class EmissionDAOTest {
 	EmissionDAO emissionDAO = null;
 
@@ -29,7 +30,7 @@ public class EmissionDAOTest {
 		 * In this case we use an XML based DAO for XML Files
 		 */
 		emissionDAO = new XMLEmissionDAO();
-		emissionDAO.setDataSource("/com/ltree/carbonandmore/dao/users.xml");
+		emissionDAO.setDataSource("/com/ltree/carbonandmore/dao/emissions.xml");
 	}
 
 	@After
@@ -44,7 +45,7 @@ public class EmissionDAOTest {
 				result, 0.01);
 	}
 
-	@Test
+
 	public void shouldNotFindEmission() {
 		double result = emissionDAO.getEmission(TRANSPORT_TYPE_NOT_ON_SYSTEM);
 		Assert.assertEquals(0.0, result, 0.01);
@@ -61,14 +62,14 @@ public class EmissionDAOTest {
 	}
 
 	@Test
-	public void shouldGenerateGoodMessageWithNull() {
+	public void shouldGenerateMessageWithNull() {
 		expectedEx.expect(IllegalArgumentException.class);
 		expectedEx.expectMessage("Invalid transport type");
 		emissionDAO.getEmission(null);
 	}
 
 	@Test
-	public void shouldNotWorkWithoutDataSource() {
+	public void shouldGenerateMessageWithoutDataSource() {
 		expectedEx.expect(IllegalArgumentException.class);
 		expectedEx.expectMessage("Datasource not set");
 		emissionDAO = new XMLEmissionDAO();
