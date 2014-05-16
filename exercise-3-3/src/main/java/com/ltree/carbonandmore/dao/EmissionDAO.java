@@ -1,5 +1,7 @@
 package com.ltree.carbonandmore.dao;
 
+import java.math.BigDecimal;
+
 public interface EmissionDAO {
 	/**
 	 * Enumeration of supported transport types held in the database. This class
@@ -20,7 +22,7 @@ public interface EmissionDAO {
 	 *            - the transport type
 	 * @return - the emission in grams per kilometer (g/km)
 	 */
-	public double getEmission(final TransportType transportType);
+	public BigDecimal getEmission(final TransportType transportType);
 	
 	/**
 	 * Sets the data source for this DAO

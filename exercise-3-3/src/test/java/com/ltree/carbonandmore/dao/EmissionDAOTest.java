@@ -1,5 +1,7 @@
 package com.ltree.carbonandmore.dao;
 
+import java.math.BigDecimal;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -18,7 +20,7 @@ public class EmissionDAOTest {
 
 	/* Test User */
 	private static final TransportType TRANSPORT_TYPE_ON_SYSTEM = TransportType.CAR_FORD_GALAXY;
-	private static final double EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM = 12.61;
+	private static final BigDecimal EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM = new BigDecimal("12.61");
 
 	/* Test User not on system */
 	private static final TransportType TRANSPORT_TYPE_NOT_ON_SYSTEM = TRANSPORT_TYPE_ON_SYSTEM.CAR_NISSAN_MICRA;
@@ -40,15 +42,16 @@ public class EmissionDAOTest {
 
 	@Test
 	public void shouldFindEmission() {
-		double result = emissionDAO.getEmission(TRANSPORT_TYPE_ON_SYSTEM);
+		BigDecimal result = emissionDAO.getEmission(TRANSPORT_TYPE_ON_SYSTEM);
 		Assert.assertEquals(EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM,
-				result, 0.01);
+				result);
 	}
+		
 
 
 	public void shouldNotFindEmission() {
-		double result = emissionDAO.getEmission(TRANSPORT_TYPE_NOT_ON_SYSTEM);
-		Assert.assertEquals(0.0, result, 0.01);
+		BigDecimal result = emissionDAO.getEmission(TRANSPORT_TYPE_NOT_ON_SYSTEM);
+		Assert.assertEquals(null, result);
 	}
 
 	@Rule

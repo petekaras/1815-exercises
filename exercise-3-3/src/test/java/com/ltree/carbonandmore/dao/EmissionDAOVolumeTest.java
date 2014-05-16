@@ -1,5 +1,7 @@
 package com.ltree.carbonandmore.dao;
 
+import java.math.BigDecimal;
+
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
@@ -35,9 +37,9 @@ public class EmissionDAOVolumeTest {
 	public void shouldFindEmission() {
 		long startTime = System.currentTimeMillis();
 
-		double result = emissionDAO.getEmission(TRANSPORT_TYPE_ON_SYSTEM);
+		BigDecimal result = emissionDAO.getEmission(TRANSPORT_TYPE_ON_SYSTEM);
 		Assert.assertEquals(EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM,
-				result, 0.01);
+				result);
 		
 		long endTime = System.currentTimeMillis();
 		long duration = endTime - startTime;
