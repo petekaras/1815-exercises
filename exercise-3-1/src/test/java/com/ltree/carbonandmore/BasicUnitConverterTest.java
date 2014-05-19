@@ -83,12 +83,14 @@ public class BasicUnitConverterTest {
 		Assert.assertEquals(MILES, result, EPSILON_MILES);
 	}
 
+
 	@Test 
 	public void shouldConvertBasicKilogramUnit() {
 		double result = carbonAndMoreUnitConverter.kilogramsToPounds(1);
 		Assert.assertEquals(BasicUnitConverter.ONE_KILOGRAM_AS_POUNDS,
 				result, EPSILON_POUNDS);
 	}
+
 
 	@Test 
 	public void shouldConvertKilogramsToPounds() {
