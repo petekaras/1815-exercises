@@ -9,7 +9,7 @@
 	<modules>
 		<module>exercise-3-1</module>
 		<module>exercise-3-2</module>
-		<module>exercise-3-3</module>
+		<module>exercise-3-3and-4-1</module>
 	</modules>
 	<groupId>ltree</groupId>
 	<artifactId>build</artifactId>
