@@ -25,12 +25,12 @@ public class CarbonDioxideCalculatorEasyMockTest {
 	public void setUp(){	
 		/* Create a mockDAO class */
     	//TODO: create the mock object
-    	emissionDAO = null;//createMock(EmissionDAO.class);	
+    	emissionDAO = createMock(EmissionDAO.class);	
 		carbonMonoxideCalculator = new CarbonDioxideCalculator(emissionDAO);
 		
 		/* Set the expectation on the mock */
 		//TODO: Change the expected return 
-		expect(emissionDAO.getEmission(TransportType.CAR_FORD_MONDEO_HATCHBACK)).andReturn(0.0);
+		expect(emissionDAO.getEmission(TransportType.CAR_FORD_MONDEO_HATCHBACK)).andReturn(CAR_FORD_MONDEO_HATCHBACK_EMISSION);
 		
 		/* Instruct the mock framework to get ready to run the test */
 		replay(emissionDAO);

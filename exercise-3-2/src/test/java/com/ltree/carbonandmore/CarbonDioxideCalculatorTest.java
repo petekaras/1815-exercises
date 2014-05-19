@@ -22,7 +22,7 @@ public class CarbonDioxideCalculatorTest {
 	public void setUp(){		
     	EmissionDAO mockEmissionDAO = new MockEmissionDAO();
     	//TODO: create an instance of the CarbonDioxideCalculator and pass in the mockEmissionDAO.
-    	carbonDioxideCalculator = null;//new CarbonDioxideCalculator(mockEmissionDAO);
+    	carbonDioxideCalculator = new CarbonDioxideCalculator(mockEmissionDAO);
 	}
 	
 	@After
