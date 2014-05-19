@@ -33,7 +33,7 @@ public class EmissionDAOVolumeTest {
 		emissionDAO = null;
 	}
 
-	@Test //(timeout=1000)
+	@Test (timeout=1000)
 	public void shouldFindEmission() {
 		long startTime = System.currentTimeMillis();
 
