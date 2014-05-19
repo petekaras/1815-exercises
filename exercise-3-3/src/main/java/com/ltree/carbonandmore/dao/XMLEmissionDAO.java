@@ -70,7 +70,7 @@ public class XMLEmissionDAO implements EmissionDAO {
 	 */
 	private String findValueInFile(final File file, final String searchName) {
 		// START exercise 3.3
-	
+
 		try {
 			log.debug("findValueInFile called: " + file.getAbsolutePath()
 					+ " searchName: " + searchName);
@@ -108,7 +108,8 @@ public class XMLEmissionDAO implements EmissionDAO {
 		}
 		return null;
 	}
-	
+
+
 		// END exercise 3.3
 
 		// START exercise 4.1
