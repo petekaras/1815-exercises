@@ -17,20 +17,22 @@ public class BasicUnitConverter implements UnitConverter{
 
 	public double milesToKilometers(double miles) {
 		return miles * ONE_MILE_AS_KILOMETER;
+		
 	}
 
 	public double poundsToKilograms(double pounds) {
 		return (1 / ONE_KILOGRAM_AS_POUNDS) * pounds;
-
+		
 	}
 
 	public double kilometersToMiles(double kilometers) {
 		return (1 / ONE_MILE_AS_KILOMETER) * kilometers;
+		
 	}
 
 	@Override
-	public double kilogramsToPounds(double kilograms) {
-		return kilograms * ONE_KILOGRAM_AS_POUNDS;
+	public double kilogramsToPounds(double pounds) {		
+		return pounds * ONE_KILOGRAM_AS_POUNDS;
 	}
 
 

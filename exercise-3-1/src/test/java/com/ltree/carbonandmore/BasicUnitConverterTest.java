@@ -1,4 +1,4 @@
-package com.ltree.carbonandmore;
+ package com.ltree.carbonandmore;
 
 import org.junit.Assert;
 import org.junit.After;
@@ -94,7 +94,7 @@ public class BasicUnitConverterTest {
 	public void shouldConvertKilogramsToPounds() {
 		double result = carbonAndMoreUnitConverter.kilogramsToPounds(KILOGRAMS);
 		Assert.assertEquals(POUNDS,
-				result, EPSILON_POUNDS);
+				result, EPSILON_POUNDS);	
 	}
 
 }

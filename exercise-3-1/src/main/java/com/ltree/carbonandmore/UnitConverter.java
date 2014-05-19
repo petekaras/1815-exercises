@@ -11,7 +11,6 @@ public interface UnitConverter {
     public double  milesToKilometers(double miles);
     public double  poundsToKilograms(double pounds);    
     public double  kilometersToMiles(double kilometers);
-    //TODO: provide a definition for a method that will return Pounds when passed kilograms as a parameter.  
-    public double kilogramsToPounds(double kilograms);
-
+    //TODO: provide a definition for a method that will return Pounds when passed kilograms as a parameter.      
+    public double kilogramsToPounds(double pounds);
 }
