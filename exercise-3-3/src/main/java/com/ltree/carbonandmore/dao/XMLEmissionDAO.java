@@ -39,13 +39,13 @@ public class XMLEmissionDAO implements EmissionDAO {
 	static Logger log = Logger.getLogger(XMLEmissionDAO.class.getName());
 
 	@Override
-	public double getEmission(final TransportType transportType) {
+	public double getEmission(final ModeOfTransport transportType) {
 		log.info("get emission called with Transport type: " + transportType);
 		if (transportType == null)
 			throw new IllegalArgumentException(ERROR_MSG_INVALID_TRANSPORT_TYPE);
 
 		String searchTerm = transportType.toString().toUpperCase();
-		String value = findValueInFile(loadData(), searchTerm);
+		String value = findEmissionFile(loadData(), searchTerm);
 
 		if (value != null) {
 			log.info("get Emission returns with value: " + value);
@@ -68,9 +68,9 @@ public class XMLEmissionDAO implements EmissionDAO {
 	 * @param searchName
 	 * @return
 	 */
-	private String findValueInFile(final File file, final String searchName) {
+	private String findEmissionFile(final File file, final String searchName) {
 		// START exercise 3.3
-
+/*
 		try {
 			log.debug("findValueInFile called: " + file.getAbsolutePath()
 					+ " searchName: " + searchName);
@@ -109,11 +109,11 @@ public class XMLEmissionDAO implements EmissionDAO {
 		return null;
 	}
 
-
+*/
 		// END exercise 3.3
 
 		// START exercise 4.1
-/*
+
 		EmissionHandler handler = new EmissionHandler();
 		handler.setSearchName(searchName);
 		try {
@@ -171,7 +171,7 @@ public class XMLEmissionDAO implements EmissionDAO {
 			return hit;
 		}
 	}
-*/
+
 	// END exercise 4.1
 
 	private File loadData() {

@@ -9,7 +9,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import com.ltree.carbonandmore.dao.EmissionDAO.TransportType;
+import com.ltree.carbonandmore.dao.EmissionDAO.ModeOfTransport;
 /**
  * Functional Tests that ensure our DAO is working as expected.
  * @author peter
@@ -19,11 +19,11 @@ public class EmissionDAOTest {
 	EmissionDAO emissionDAO = null;
 
 	/* Test User */
-	private static final TransportType TRANSPORT_TYPE_ON_SYSTEM = TransportType.CAR_FORD_GALAXY;
+	private static final ModeOfTransport TRANSPORT_TYPE_ON_SYSTEM = ModeOfTransport.CAR_FORD_GALAXY;
 	private static final double EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM = 12.61;
 
 	/* Test User not on system */
-	private static final TransportType TRANSPORT_TYPE_NOT_ON_SYSTEM = TRANSPORT_TYPE_ON_SYSTEM.CAR_NISSAN_MICRA;
+	private static final ModeOfTransport TRANSPORT_TYPE_NOT_ON_SYSTEM = TRANSPORT_TYPE_ON_SYSTEM.CAR_NISSAN_MICRA;
 
 	@Before
 	public void setUp() {

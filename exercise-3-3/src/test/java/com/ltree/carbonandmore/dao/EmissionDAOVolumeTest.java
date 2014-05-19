@@ -8,12 +8,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.ltree.carbonandmore.dao.EmissionDAO.TransportType;
+import com.ltree.carbonandmore.dao.EmissionDAO.ModeOfTransport;
 
 public class EmissionDAOVolumeTest {
 	EmissionDAO emissionDAO = null;
 	/* Test User */
-	private static final TransportType TRANSPORT_TYPE_ON_SYSTEM = TransportType.CAR_FORD_GALAXY;
+	private static final ModeOfTransport TRANSPORT_TYPE_ON_SYSTEM = ModeOfTransport.CAR_FORD_GALAXY;
 	private static final double EXPECTED_EMISSION_FOR_TRANSPORT_TYPE_ON_SYSTEM = 12.61;
 	
 	static Logger log = Logger.getLogger(EmissionDAOVolumeTest.class.getName());

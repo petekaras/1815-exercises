@@ -11,7 +11,7 @@ public interface EmissionDAO {
 	 * @author peter
 	 * 
 	 */
-	public enum TransportType {
+	public enum ModeOfTransport {
 		CAR_FORD_MONDEO_HATCHBACK, CAR_FORD_GALAXY, CAR_NISSAN_MICRA, TRAIN_KIHA_281, TRAIN_E653, BICYCLE
 	}
 
@@ -22,7 +22,7 @@ public interface EmissionDAO {
 	 *            - the transport type
 	 * @return - the emission in grams per kilometer (g/km)
 	 */
-	public double getEmission(final TransportType transportType); 
+	public double getEmission(final ModeOfTransport transportType); 
 	
 	/**
 	 * Sets the data source for this DAO
