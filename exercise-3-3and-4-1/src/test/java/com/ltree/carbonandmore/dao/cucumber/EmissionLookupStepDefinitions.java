@@ -1,14 +1,16 @@
-package com.ltree.carbonandmore.dao;
+package com.ltree.carbonandmore.dao.cucumber;
  
 import org.junit.Assert;
 
+import com.ltree.carbonandmore.dao.EmissionDAO;
+import com.ltree.carbonandmore.dao.XMLEmissionDAO;
 import com.ltree.carbonandmore.dao.EmissionDAO.TransportType;
 
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
  
-public class DepositStepDefinitions {
+public class EmissionLookupStepDefinitions {
 	
 	EmissionDAO emissionDAO = null;
 	long measuredTime = 0;
@@ -16,7 +18,7 @@ public class DepositStepDefinitions {
 	@Given("^I have a database of many emissions located in file: \"([^\"]*)\"$")
 	public void I_have_a_database_of_many_emissions(String fileName) {
 		emissionDAO = new XMLEmissionDAO();
-		emissionDAO.setDataSource("/com/ltree/carbonandmore/dao/emissions_high_volume.xml");
+		emissionDAO.setDataSource("/com/ltree/carbonandmore/dao/"+ fileName);
 		Assert.assertTrue(true);
 	}
  
