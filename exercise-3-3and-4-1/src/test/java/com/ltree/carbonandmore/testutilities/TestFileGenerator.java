@@ -1,4 +1,4 @@
-package com.ltree.carbonandmore.dao;
+package com.ltree.carbonandmore.testutilities;
 
 import java.io.File;
 import java.util.Random;
@@ -16,8 +16,15 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
+/**
+ * Utility to generate an XML file thats used as part of this exercise.
+ * @author peter
+ *
+ */
 public class TestFileGenerator {
+
+	private static final int NUMBER_OF_RECORDS = 100000;
+	private static final String OUTPUT_XML_FILE_NAME = "C:/Users/peter/file.xml";
 
 	public static void main(String argv[]) {
 
@@ -31,23 +38,19 @@ public class TestFileGenerator {
 			Document doc = docBuilder.newDocument();
 			Element rootElement = doc.createElement("emissions");
 			doc.appendChild(rootElement);
-			for (int i = 0; i < 100000; i++) {
-				// staff elements
-				Element staff = doc.createElement("transport");
-				rootElement.appendChild(staff);
+			for (int i = 0; i < NUMBER_OF_RECORDS; i++) {
 
-				// set attribute to staff element
+				Element transport = doc.createElement("transport");
+				rootElement.appendChild(transport);
+
 				Attr attr = doc.createAttribute("type");
 				attr.setValue("TYPE"+i);
-				staff.setAttributeNode(attr);
+				transport.setAttributeNode(attr);
 
-				// shorten way
-				// staff.setAttribute("id", "1");
 
-				// firstname elements
-				Element firstname = doc.createElement("emission");
-				firstname.appendChild(doc.createTextNode(getRandomEmission()));
-				staff.appendChild(firstname);
+				Element emission = doc.createElement("emission");
+				emission.appendChild(doc.createTextNode(getRandomEmission()));
+				transport.appendChild(emission);
 			}
 
 			// write the content into xml file
@@ -57,10 +60,7 @@ public class TestFileGenerator {
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			DOMSource source = new DOMSource(doc);
 			StreamResult result = new StreamResult(new File(
-					"C:/Users/peter/file.xml"));
-
-			// Output to console for testing
-			// StreamResult result = new StreamResult(System.out);
+					OUTPUT_XML_FILE_NAME));
 
 			transformer.transform(source, result);
 
