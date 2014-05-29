@@ -1,7 +1,5 @@
 package com.ltree.carbonandmore.dao;
 
-import java.math.BigDecimal;
-
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
